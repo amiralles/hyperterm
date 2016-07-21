@@ -48,8 +48,8 @@ app.on('ready', () => {
     const cfg = plugins.getDecoratedConfig();
 
     const win = new BrowserWindow({
-      width: 540,
-      height: 380,
+      width: cfg.width || 540,
+      height: cfg.height || 380,
       minHeight: 190,
       minWidth: 370,
       titleBarStyle: 'hidden-inset',
